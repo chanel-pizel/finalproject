@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz SPA</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- JavaScript -->
+    <script  type="module" defer src="../assets/js/main.js"></script>
+    <script  type="module" defer src="./static/js/index.js"></script>
+    <script  type="module" defer src="./../assets/js/load.js"></script>
+
+
+</head>
+<body>
+    <div class="main-cotainer">
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid bg-primary pb-3">
+            <div class="container">
+                <h1 class="display-3 text-white">Online Learning</h1>
+                <p class="lead text-white">Test your self here</p>
+                <hr class="my-2">
+                <p class="lead ">
+                    <!-- <a class="btn btn-warning btn-lg" href="#" role="button">Start Test</a> -->
+                </p>
+            </div>
+        </div>
+        <!-- Inner container -->
+        <div class="container middle-container">
+            <h2 class="text-center text-primary mt-4">To Get Started </h2>
+            <p class="text-center">Enter your name</p>
+            <div class="user-inpur-box ">
+                <input type="text" name="user-name" id="user-name" class="btn" placeholder="Enter your name...">
+                <button class="btn btn-success" id="submit">submit</button>
+            </div>
+            <div class="alert alert-danger text-center w-25 m-auto mt-3" id="danger">Enter your name</div>
+            <div class="alert alert-success text-center w-25 m-auto mt-3" id="success">Successful</div>
+            <!-- Test Categories -->
+            <div class="selctor-box mt-5">
+                <h4 class="text-center">Select the test you want to work on</h4>
+                 <!-- Custom Menu Selector -->
+                 <div class="custom-select" style="width:200px;">
+                    <select id="subject">
+                      <option value="0">Select Category:</option>
+                      <option value="1">Java</option>
+                      <option value="2">C++</option>
+                    </select>
+                  </div>
+                  <a class="btn btn-warning btn-lg" href="#" role="button" id="btn-start">Start Test</a>
+            </div>
+        </div>
+           <div class="main-quiz">
+               <h2 class="text-center mt-5"><span class="title"></span>Quiz</h2>
+        <div class="Quiz-container container w-60 pt-3"> 
+             <p class="question "><span class="number">1</span> Questions</p>
+             <!--Answers -->
+             <ol class="answer-box">
+                <li class="answers bg-primary"></li>
+                <li class="answers bg-primary"></li>
+                <li class="answers bg-primary"></li>
+                <li class="answers bg-primary"></li>
+             </ol>
+        </div>
+           </div>
+    </div>
+</body>
+</html>
